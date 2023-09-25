@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<% books.forEach(function(book) { %>
+		<div>Назва: <%= book.title %></div>
+		<div>
+			Автор(и) <% book.authors.forEach(function(author) { %> <%= author.name%>
+			<% }); %>
+		</div>
+		<div>Жанр: <%= book.category.name%></div>
+		<br />
+		<% }); %>
+	</body>
+</html>
